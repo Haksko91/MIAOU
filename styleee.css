@@ -16,10 +16,15 @@ img{
     
 }
 
+body {
+    position: relative; /* Nécessaire pour positionner l'image */
+    overflow: hidden; /* Empêche le défilement si l'image sort de l'écran */
+}
+
 #image {
     display: none; /* Cache l'image par défaut */
-    position: absolute; /* Pour mieux positionner l'image si besoin */
-    top: 50%; /* Centre verticalement */
-    left: 50%; /* Centre horizontalement */
-    transform: translate(-50%, -50%); /* Ajuste pour un centrage parfait */
+    position: absolute; /* Pour positionner l'image à différents endroits */
+    width: 100px; /* Taille de l'image (ajuste selon tes besoins) */
+    height: auto; /* Maintient le ratio de l'image */
+    z-index: -1; /* Met l'image derrière tout le contenu */
 }
