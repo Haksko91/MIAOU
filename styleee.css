@@ -15,3 +15,11 @@ img{
     margin-right: auto;
     
 }
+
+#image {
+    display: none; /* Cache l'image par défaut */
+    position: absolute; /* Pour mieux positionner l'image si besoin */
+    top: 50%; /* Centre verticalement */
+    left: 50%; /* Centre horizontalement */
+    transform: translate(-50%, -50%); /* Ajuste pour un centrage parfait */
+}
